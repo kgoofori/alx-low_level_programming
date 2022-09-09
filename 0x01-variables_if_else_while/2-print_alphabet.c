@@ -10,7 +10,13 @@
  */
 int main(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char alpha = "a";
 
+	while (alpha <= "Z")
+	{
+		putchar(alpha);
+		alpha++;
+	}
+	putchar("\n")
 	return (0);
 }
