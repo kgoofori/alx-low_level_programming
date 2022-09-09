@@ -14,7 +14,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		if(num == 9)
+		if (num == 9)
 		{
 			printf("%d", num);
 		} else
