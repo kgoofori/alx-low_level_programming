@@ -14,7 +14,13 @@ int main(void)
 
 	while (num < 10)
 	{
-		printf("%d, ", num);
+		if(num == 9)
+		{
+			printf("%d", num);
+		} else
+		{
+			printf("%d, ", num);
+		}
 		num++;
 	}
 	putchar('\n');
