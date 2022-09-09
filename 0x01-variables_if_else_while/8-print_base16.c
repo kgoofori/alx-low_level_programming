@@ -19,7 +19,7 @@ int main(void)
 		num++;
 	}
 
-	while (alpha <= 'z')
+	while (alpha <= 'f')
 	{
 		putchar(alpha);
 		alpha++;
