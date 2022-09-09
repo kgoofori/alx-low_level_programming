@@ -17,27 +17,13 @@ int main(void)
 	{
 		for (num2 = num1 + 1; num2 < 100; num2++)
 		{
-			if(num1 < 10)
-			{
-				putchar('0');
-				putchar(num1 + '0');
-			} else
-			{
-				putchar(num1 / 10 + '0');
-				putchar(num1 % 10 + '0');
-			}
+			putchar(num1 / 10 + '0');
+			putchar(num1 % 10 + '0');
 
 			putchar(' ');
 
-			if (num2 < 10)
-			{
-				putchar('0');
-				 putchar(num1 + '0');
-			} else
-			{
-				putchar(num2 / 10 + '0');
-				putchar(num2 % 10 + '0');
-			}
+			putchar(num2 / 10 + '0');
+			putchar(num2 % 10 + '0');
 
 			if (num1 != 99 || num2 != 99)
 			{
