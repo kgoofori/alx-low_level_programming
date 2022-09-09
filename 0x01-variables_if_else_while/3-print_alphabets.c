@@ -20,10 +20,10 @@ int main(void)
 	}
 
 	while (cap <= 'Z')
-        {
-                putchar(cap);
-                cap++;
-        }
+	{
+		putchar(cap);
+		cap++;
+	}
 
 	putchar('\n');
 	return (0);
