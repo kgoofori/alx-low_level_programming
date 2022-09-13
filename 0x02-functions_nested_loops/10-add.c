@@ -1,5 +1,5 @@
 /**
- * ad -> add two numbers
+ * add -> add two numbers
  * @a: integer
  * @b: integer
  * Return: int
