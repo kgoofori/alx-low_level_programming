@@ -1,11 +1,24 @@
-#include "main.h"
-
 /**
- * print_last_digit -> checks for lowwercase
+ * print_sign -> checks for lowwercase
  * @n: integer
  * Return: 1 for lowercase and 0 for uppercase
  */
-int print_last_digit(int n)
+int print_sign(int n)
 {
-	_putchar(n % 10 + '0');
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+
+	_putchar('-');
+	return (1);
+
 }
+
