@@ -2,9 +2,7 @@
 /* more headers goes there */
 
 /**
- * main - Entry point
- *
- * Description:
+ * Description: prints alphabest
  *
  * Return: Always 0 (Success)
  */
