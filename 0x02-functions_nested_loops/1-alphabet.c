@@ -1,10 +1,7 @@
 #include "main.h"
-/* more headers goes there */
 
 /**
- * Description: prints alphabest
- *
- * Return: Always 0 (Success)
+ * print_alphabet -> p rints alphabest
  */
 void print_alphabet(void)
 {
