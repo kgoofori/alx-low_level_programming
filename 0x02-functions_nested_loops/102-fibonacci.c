@@ -18,11 +18,11 @@ int main(void)
 		a = b;
 		b = val;
 
-		print("%lu", val);
+		printf("%lu", val);
 
 		if (i < 100)
 		{
-			printf(', ');
+			printf(", ");
 		}
 	}
 
