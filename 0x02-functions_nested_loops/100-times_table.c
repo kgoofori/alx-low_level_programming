@@ -18,6 +18,7 @@ void print_times_table(int n)
 			if (val < 10 && b != 0)
 			{
 				_putchar(' ');
+				_putchar(' ');
 			}
 
 			if (b < n)
@@ -25,7 +26,7 @@ void print_times_table(int n)
 				printf("%i, ", val);
 			} else 
 			{
-				printf("%i", val);
+				printf("%i\n", val);
 			}
 		}
 
