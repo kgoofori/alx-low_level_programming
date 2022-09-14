@@ -15,6 +15,11 @@ void times_table(void)
 			val = a * b;
 			if (val < 10)
 			{
+				if (val != 10)
+				{
+					_putchar(' ');
+				}
+
 				_putchar(val + '0');
 			}else
 			{
@@ -27,10 +32,6 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 
-				if (val < 10)
-				{
-					_putchar(' ');
-				}
 			}
 		}
 
