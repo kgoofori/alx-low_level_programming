@@ -15,26 +15,21 @@ void print_times_table(int n)
 		for (b = 0; b <= n; b++)
 		{
 			val = a * b;
-			if (val < 10 && b != 0)
+
+			if (b == n)
+			{
+				printf("%i\n", val);
+			} else if (val < 10 && b != 0)
 			{
 				printf("  %i, ", val);
-				continue;
-			}
-
-			if (val < 100)
+			} else if (val < 100 && b != 0 )
 			{
 				printf(" %i, ", val);
 				continue;
-			}
-
-
-			if (b < n)
+			} else
 			{
 				printf("%i, ", val);
-			} else 
-			{
-				printf("%i\n", val);
-			}
+			} 
 		}
 
 		_putchar('\n');
