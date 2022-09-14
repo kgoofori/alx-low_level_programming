@@ -10,9 +10,8 @@ int main(void)
 {
 	int i;
 	long int a = 0, b = 1,  val;
-	
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 50; i++)
 	{
 		val = a + b;
 		a = b;
