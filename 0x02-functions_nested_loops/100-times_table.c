@@ -11,7 +11,7 @@ void print_times_table(int n)
 	int a, b, val;
 	if (n > 15)
 	{
-		return (void);
+		break;
 	}
 
 	for (a = 0; a <= n; a++)
