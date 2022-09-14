@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	unsigned long int a = 0, b = 1,  val;
+	long int a = 0, b = 1,  val;
 
 	for (i = 0; i < 98; i++)
 	{
@@ -17,7 +17,13 @@ int main(void)
 		a = b;
 		b = val;
 
-		printf("%lu", val);
+		if(i < 92)
+		{
+			printf("%lu", val);
+		} else {
+			printf("%lu", val / 1000000000);
+			printf("%lu", val % 1000000000);
+		}
 
 		if (i < 97)
 		{
