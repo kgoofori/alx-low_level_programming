@@ -30,11 +30,10 @@ void print_times_table(int n)
 
 			if (b == n)
 			{
-				 printf("%i\n", val);
+				 printf("%\n", val);
 			}	 
 		}
 
-		_putchar('\n');
 	}
 
 
