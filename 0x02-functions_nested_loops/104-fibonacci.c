@@ -17,13 +17,7 @@ int main(void)
 		a = b;
 		b = val;
 
-		if(i < 92)
-		{
-			printf("%lu", val);
-		} else {
-			printf("%lu", val / 1000000000);
-			printf("%lu", val % 1000000000);
-		}
+		printf("%lu", val);
 
 		if (i < 97)
 		{
