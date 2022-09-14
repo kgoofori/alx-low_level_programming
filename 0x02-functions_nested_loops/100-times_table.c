@@ -9,20 +9,22 @@
 void print_times_table(int n)
 {
 	int a, b, val;
+	if (n > 15)
+		return (void);
 
 	for (a = 0; a <= n; a++)
 	{
 		for (b = 0; b <= n; b++)
 		{
 			val = a * b;
-			
+
 			if (b == n)
 			{
 
 				if (val < 10 && b != 0)
 				{
 					printf("  %i\n", val);
-				} else if (val < 100 && b != 0 )
+				} else if (val < 100 && b != 0)
 				{
 					printf(" %i\n", val);
 				} else
@@ -34,7 +36,7 @@ void print_times_table(int n)
 				if (val < 10 && b != 0)
 				{
 					printf("  %i, ", val);
-				} else if (val < 100 && b != 0 )
+				} else if (val < 100 && b != 0)
 				{
 					printf(" %i, ", val);
 				} else
