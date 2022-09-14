@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -17,7 +16,17 @@ void print_to_98(int n)
 				_putchar(n + '0');
 			} else
 			{
-				printf("%i", n);
+				rem = n;
+
+				if (rem > 99)
+				{
+					_putchar(rem / 100 + '0');
+					rem = n - 100;
+				}
+
+				_putchar(rem / 10 + '0');
+				_putchar(rem % 10 + '0');
+					
 			}
 
 			if ( n != 98)
@@ -37,7 +46,15 @@ void print_to_98(int n)
 				_putchar(n + '0');
 			} else
 			{
-				printf("%i", n);
+				rem = n;
+				if (rem > 99)
+				{
+					_putchar(rem / 100 + '0');
+					rem = n - 100;
+				}
+
+				_putchar(rem / 10 + '0');
+				_putchar(rem % 10 + '0');
 			}
 
 			if ( n != 98)
