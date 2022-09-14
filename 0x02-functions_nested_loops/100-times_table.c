@@ -17,9 +17,16 @@ void print_times_table(int n)
 			val = a * b;
 			if (val < 10 && b != 0)
 			{
-				_putchar(' ');
-				_putchar(' ');
+				printf("  %i, ", val);
+				continue;
 			}
+
+			if (val < 100)
+			{
+				printf(" %i, ", val);
+				continue;
+			}
+
 
 			if (b < n)
 			{
