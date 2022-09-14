@@ -37,7 +37,7 @@ void print_to_98(int n)
 				_putchar(n + '0');
 			} else
 			{
-				printf("%i, ", n);
+				printf("%i", n);
 			}
 
 			if ( n != 98)
