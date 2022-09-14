@@ -19,7 +19,7 @@ int main(void)
 
 		printf("%lu", val);
 
-		if (i < 100)
+		if (i < 49)
 		{
 			printf(", ");
 		}
