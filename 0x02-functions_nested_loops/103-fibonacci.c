@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	long int a = 0, b = 1, sum = 0, val;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; val < 4000000; i++)
 	{
 		val = a + b;
 		a = b;
