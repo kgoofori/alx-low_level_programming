@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i;
-	long int a = 0, b = 1,  val;
+	unsigned long int a = 0, b = 1,  val;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 0; i < 98; i++)
 	{
 		val = a + b;
 		a = b;
@@ -19,7 +19,7 @@ int main(void)
 
 		printf("%lu", val);
 
-		if (i <= 97)
+		if (i < 97)
 		{
 			printf(", ");
 		}
