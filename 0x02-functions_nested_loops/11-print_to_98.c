@@ -5,67 +5,28 @@
  * @n: integer
  * Return: void
  */
+
+
 void print_to_98(int n)
 {
-	int rem;
 
-	if (n <= 98)
+	if (n < 98)
 	{
-		while (n <= 98)
+		while (n < 98)
 		{
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			} else
-			{
-				rem = n;
-
-				if (rem > 99)
-				{
-					_putchar(rem / 100 + '0');
-					rem = n - 100;
-				}
-
-				_putchar(rem / 10 + '0');
-				_putchar(rem % 10 + '0');
-					
-			}
-
-			if ( n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf('%d, ', n);
 			n++;
 		}
 
 	} else
 	{
-		while (n >= 98)
+		while (n > 98)
 		{
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			} else
-			{
-				rem = n;
-				if (rem > 99)
-				{
-					_putchar(rem / 100 + '0');
-					rem = n - 100;
-				}
-
-				_putchar(rem / 10 + '0');
-				_putchar(rem % 10 + '0');
-			}
-
-			if ( n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf('%d, ', n);
 			n--;
 		}
 	}
+
+	printf('%d', 98);
 	_putchar('\n');
 }
