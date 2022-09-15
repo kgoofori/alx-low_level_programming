@@ -1,13 +1,10 @@
 #include "main.h"
-/* more headers goes there */
 
 /**
- * main - Entry point
- *
- * Description:
- *
- * Return: Always 0 (Success)
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
  */
+
 int main(void)
 {
 	int i;
