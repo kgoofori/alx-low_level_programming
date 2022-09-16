@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_numbers -> checks for lowwercase
+ * print_most_numbers -> checks for lowwercase
  * Return: void
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i = 0;
 
@@ -13,11 +13,11 @@ void print_numbers(void)
 	{
 		if (i != 4 && i != 2)
 		{
-			printf("%i", i);
+			_putchar('0'+ i);
 		}
 		i++;
 	}
 
-	printf("\n");
+	_putchar('\n');
 
 }
