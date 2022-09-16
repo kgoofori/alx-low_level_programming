@@ -3,7 +3,7 @@
 
 /**
  * print_numbers -> checks for lowwercase
- * Return: void 
+ * Return: void
  */
 void print_numbers(void)
 {
@@ -14,5 +14,7 @@ void print_numbers(void)
 		printf("%i", i);
 		i++;
 	}
+
+	printf("\n");
 
 }
