@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_line -> checks for lowwercase
+ * print_number -> checks for lowwercase
  * @n: int
+ * Description: prints numbers
  * Return: void
  */
 
