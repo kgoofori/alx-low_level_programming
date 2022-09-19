@@ -2,7 +2,7 @@
 
 /**
  * puts_half - find the length of a string
- * @s: string pointer
+ * @str: string pointer
  * Description: desc
  * Return: int
 */
@@ -17,7 +17,15 @@ void puts_half(char *str)
 		i++;
 	}
 
-	for (i /= 2; str[i] != '\0'; i++)
+	if (i % 2 == 0)
+	{
+		i = i / 2;
+	} else
+	{
+		i = i / 2 + 1;
+	}
+
+	while (str[i])
 	{
 		_putchar(str[i]);
 	}
