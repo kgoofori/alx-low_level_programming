@@ -2,7 +2,7 @@
 
 /**
  * *cap_string - capitalize words
- * @str: pointer
+ * @string: pointer
  * Return: string
 */
 
@@ -18,21 +18,21 @@ char *cap_string(char *string)
 		if (i == 0)
 		{
 			upper = 1;
-       		} else
+		} else
 		{
 			for (x = 0; special_chars[x] != '\0'; x++)
 			{
-		   		if (string[i - 1] == special_chars[x])
+				if (string[i - 1] == special_chars[x])
 				{
 					upper = 1;
 					break;
 				}
-	    		}
+			}
 		}
 
 		if (upper == 1 && string[i] >= 'a' && string[i] <= 'z')
 			string[i] -= 32;
 	}
 
-    return (string);
+	return (string);
 }
