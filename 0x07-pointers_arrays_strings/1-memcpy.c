@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant b.
+ * *_memcpy - fills memory with a constant b.
  * @dest: pointer
  * @src: char
  * @n: int
