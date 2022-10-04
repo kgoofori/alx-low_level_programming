@@ -11,7 +11,9 @@
 int getLenght(char *s)
 {
 	int size;
-	for (size = 0; s[size] != '\0'; size++);
+
+	for (size = 0; s[size] != '\0'; size++)
+		;
 
 	return (size);
 }
@@ -35,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 	size1 = getLenght(s1);
 	size2 = getLenght(s2);
-	val = malloc((size1 + size2) *sizeof(char) + 1);
+	val = malloc((size1 + size2) * sizeof(char) + 1);
 
 	if (val == NULL)
 		return (NULL);
