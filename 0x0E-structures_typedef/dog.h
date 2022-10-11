@@ -8,11 +8,17 @@
  * @owner: string
  */
 
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
+
+
+/**
+*dog_t - Typedef for dog
+*/
+typedef struct dog dog_t;
 
 #endif
